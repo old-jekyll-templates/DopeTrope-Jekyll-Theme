@@ -1,0 +1,45 @@
+---
+title: Blog
+layout: default
+---
+<body>
+
+	{% include nav.html %}
+
+		<!-- Main -->
+			<div id="main-wrapper">
+				<div class="container">
+		<div class="row">
+			<div class="12u">
+
+				<!-- Blog -->
+					<section>
+						<header class="major">
+							<h2>The Blog</h2>
+						</header>
+						{% for post in site.posts offset: 0 limit: 4 %}
+						<div class="row">
+							<div class="10u -1u">
+								<section class="box">
+									<a href="#" class="image featured"><img src="{{ post.featured }}" alt="" /></a>
+									<header>
+										<h3>{{ post.title }}</h3>
+										<p>Posted {{ post.date | date_to_string }}</p>
+									</header>
+									{{ post.excerpt }}
+									<footer>
+										<ul class="actions">
+											<li><a href="{{ site.prefix }}{{ post.url }}" class="button icon fa-file-text">Continue Reading</a></li>
+											<li><a href="#" class="button alt icon fa-comment">33 comments</a></li>
+										</ul>
+									</footer>
+								</section>
+							</div>
+						</div>
+						{% endfor %}
+					</section>
+
+			</div>
+		</div>
+	</div>
+</div>

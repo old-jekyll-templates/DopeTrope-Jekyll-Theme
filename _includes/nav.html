@@ -1,0 +1,43 @@
+<!-- Header -->
+	<div id="header-wrapper">
+		<div id="header">
+
+			<!-- Logo -->
+				<h1><a href="/index.html">Dopetrope</a></h1>
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="/index.html">Home</a></li>
+						<li>
+							<a href="">Dropdown</a>
+							<ul>
+								<li><a href="/blog">Blog</a></li>
+								<li><a href="#">Magna phasellus</a></li>
+								<li><a href="#">Etiam dolore nisl</a></li>
+								<li>
+									<a href="">Phasellus consequat</a>
+									<ul>
+										<li><a href="#">Magna phasellus</a></li>
+										<li><a href="#">Etiam dolore nisl</a></li>
+										<li><a href="#">Veroeros feugiat</a></li>
+										<li><a href="#">Nisl sed aliquam</a></li>
+										<li><a href="#">Dolore adipiscing</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Veroeros feugiat</a></li>
+							</ul>
+						</li>
+						{% assign current = page.url | downcase | split: '/' %}
+						<li {% if current[1] == 'left-sidebar.html' %}class='current'{% endif %}><a href="/left-sidebar.html">Left Sidebar</a></li>
+						<li {% if current[1] == 'right-sidebar.html' %}class='current'{% endif %}><a href="/right-sidebar.html">Right Sidebar</a></li>
+						<li {% if current[1] == 'no-sidebar.html' %}class='current'{% endif %}><a href="/no-sidebar.html">No Sidebar</a></li>
+					</ul>
+				</nav>
+
+				<div class="header-img">
+					<img src="/assets/images/pic11.jpg">
+				</div>
+
+		</div>
+	</div>
