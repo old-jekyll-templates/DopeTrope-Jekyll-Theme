@@ -1,3 +1,5 @@
+---
+---
 /*
 	Dopetrope by HTML5 UP
 	html5up.net | @n33co
@@ -9,10 +11,10 @@
 	skel.init({
 		reset: 'full',
 		breakpoints: {
-			'global':	{ range: '*', href: '/assets/css/style.css' },
-			'desktop':	{ range: '641-', href: '/assets/css/style-desktop.css', containers: 1200, grid: { gutters: 50 } },
-			'1000px':	{ range: '641-1200', href: '/assets/css/style-1000px.css', containers: 960, grid: { gutters: 25 }, viewport: { width: 1024 } },
-			'mobile':	{ range: '-640', href: '/assets/css/style-mobile.css', containers: '100%', grid: { collapse: true, gutters: 10 }, viewport: { scalable: false } }
+			'global':	{ range: '*', href: '{{ site.baseurl }}/assets/css/style.css' },
+			'desktop':	{ range: '641-', href: '{{ site.baseurl }}/assets/css/style-desktop.css', containers: 1200, grid: { gutters: 50 } },
+			'1000px':	{ range: '641-1200', href: '{{ site.baseurl }}/assets/css/style-1000px.css', containers: 960, grid: { gutters: 25 }, viewport: { width: 1024 } },
+			'mobile':	{ range: '-640', href: '{{ site.baseurl }}/assets/css/style-mobile.css', containers: '100%', grid: { collapse: true, gutters: 10 }, viewport: { scalable: false } }
 		}
 	}, {
 		layers: {
