@@ -3,13 +3,13 @@
 	<!-- Sidebar -->
 	{% for post in site.posts offset: 0 limit: 2 %}
 		<section class="box">
-			<a href="#" class="image featured"><img src="{{ post.featured }}" alt="" /></a>
+			<a href="#" class="image featured"><img src="{{ site.baseurl }}{{ post.featured }}" alt="" /></a>
 			<header>
 				<h3>{{ post.title }}</h3>
 			</header>
 			{{ post.excerpt }}
 			<footer>
-				<a href="{{ site.prefix }}{{ post.url }}" class="button alt">Magna sed taciti</a>
+				<a href="{{ site.baseurl }}{{ post.url }}" class="button alt">Magna sed taciti</a>
 			</footer>
 		</section>
 	{% endfor %}
