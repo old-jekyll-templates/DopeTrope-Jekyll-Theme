@@ -2,22 +2,6 @@
 			<div id="footer-wrapper">
 				<section id="footer" class="container">
 					<div class="row">
-						<div class="8u">
-							<section>
-								<header>
-									<h2>Blandit nisl adipiscing</h2>
-								</header>
-								<ul class="dates">
-								{% for post in site.posts offset: 0 limit: 5 %}
-									<li>
-										<span class="date">{{ post.date | date: "%B"}} <strong>{{ post.date | date: "%d"}}</strong></span>
-										<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-										{{ post.excerpt }}
-									</li>
-								{% endfor %}
-								</ul>
-							</section>
-						</div>
 						<div class="4u">
 							<section>
 								<header>
@@ -37,15 +21,11 @@
 						<div class="4u">
 							<section>
 								<header>
-									<h2>Tempus consequat</h2>
+									<h2>Relevant sites</h2>
 								</header>
 								<ul class="divided">
-									<li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
-									<li><a href="#">Sed et blandit consequat sed tlorem blandit</a></li>
-									<li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
-									<li><a href="#">Hendrerit tortor vitae mattis tempor sapien</a></li>
-									<li><a href="#">Sem feugiat sapien id suscipit magna felis nec</a></li>
-									<li><a href="#">Elit class aptent taciti sociosqu ad litora</a></li>
+									<li><a href="#">Site 01</a></li>
+									<li><a href="#">Site 02</a></li>
 								</ul>
 							</section>
 						</div>
