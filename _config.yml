@@ -1,5 +1,3 @@
-name: DopeTrope
-description: DopeTrope template for Jekyll
+name: Sugar Piano
+description: free online piano lesson and piano resources
 paginate: 10
-baseurl: '/DopeTrope-Jekyll-Theme'
-permalink: none
