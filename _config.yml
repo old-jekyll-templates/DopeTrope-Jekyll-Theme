@@ -2,3 +2,4 @@ name: DopeTrope
 description: DopeTrope template for Jekyll
 paginate: 10
 baseurl: '/DopeTrope-Jekyll-Theme'
+permalink: /:categories/:basename/
