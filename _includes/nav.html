@@ -3,35 +3,61 @@
 		<div id="header">
 
 			<!-- Logo -->
-				<h1><a href="{{ site.baseurl }}/index.html">Dopetrope</a></h1>
+				<h1><a href="{{ site.baseurl }}/index.html">Sugar Piano</a></h1>
 
 			<!-- Nav -->
 				<nav id="nav">
 					<ul>
 						<li><a href="{{ site.baseurl }}/index.html">Home</a></li>
+						<li><a href="{{ site.baseurl }}/blog">Blog</a></li>
 						<li>
-							<a href="">Dropdown</a>
+							<a href="">For Beginner Level</a>
 							<ul>
-								<li><a href="{{ site.baseurl }}/blog">Blog</a></li>
-								<li><a href="#">Magna phasellus</a></li>
-								<li><a href="#">Etiam dolore nisl</a></li>
-								<li>
-									<a href="">Phasellus consequat</a>
-									<ul>
-										<li><a href="#">Magna phasellus</a></li>
-										<li><a href="#">Etiam dolore nisl</a></li>
-										<li><a href="#">Veroeros feugiat</a></li>
-										<li><a href="#">Nisl sed aliquam</a></li>
-										<li><a href="#">Dolore adipiscing</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Veroeros feugiat</a></li>
+								<li><a href="#">Lesson 01</a></li>
+								<li><a href="#">Lesson 02</a></li>
+								<li><a href="#">Lesson 03</a></li>
+								<li><a href="#">Lesson 04</a></li>
+								<li><a href="#">Lesson 05</a></li>
+								<li><a href="#">Lesson 06</a></li>
+								<li><a href="#">Lesson 07</a></li>
+								<li><a href="#">Lesson 08</a></li>
+								<li><a href="#">Lesson 09</a></li>
+								<li><a href="#">Lesson 10</a></li>
 							</ul>
 						</li>
+							<li>
+							<a href="">For Intermediate Level</a>
+							<ul>
+								<li><a href="#">Lesson 01</a></li>
+								<li><a href="#">Lesson 02</a></li>
+								<li><a href="#">Lesson 03</a></li>
+								<li><a href="#">Lesson 04</a></li>
+								<li><a href="#">Lesson 05</a></li>
+								<li><a href="#">Lesson 06</a></li>
+								<li><a href="#">Lesson 07</a></li>
+								<li><a href="#">Lesson 08</a></li>
+								<li><a href="#">Lesson 09</a></li>
+								<li><a href="#">Lesson 10</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="">For Advanced Level</a>
+							<ul>
+								<li><a href="#">Lesson 01</a></li>
+								<li><a href="#">Lesson 02</a></li>
+								<li><a href="#">Lesson 03</a></li>
+								<li><a href="#">Lesson 04</a></li>
+								<li><a href="#">Lesson 05</a></li>
+								<li><a href="#">Lesson 06</a></li>
+								<li><a href="#">Lesson 07</a></li>
+								<li><a href="#">Lesson 08</a></li>
+								<li><a href="#">Lesson 09</a></li>
+								<li><a href="#">Lesson 10</a></li>
+							</ul>
+						</li>
+						<li><a href="{{ site.baseurl }}/sheet">Sheet</a></li>
+						<li><a href="{{ site.baseurl }}/Recommend">Paid Courses & E-books</a></li>
 						{% assign current = page.url | downcase | split: '/' %}
-						<li {% if current[1] == 'left-sidebar.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/left-sidebar.html">Left Sidebar</a></li>
-						<li {% if current[1] == 'right-sidebar.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/right-sidebar.html">Right Sidebar</a></li>
-						<li {% if current[1] == 'no-sidebar.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/no-sidebar.html">No Sidebar</a></li>
 					</ul>
 				</nav>
 
